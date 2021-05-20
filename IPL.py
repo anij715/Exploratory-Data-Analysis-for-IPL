@@ -32,38 +32,8 @@ ax.set_title("Most significant player")
 sns.barplot(x=df_top_players.index, y=df_top_players, orient='v')
 plt.show()
 
-# for x in df['id']:
-#     if df['toss_decision'] == 'field':
-#         if df['winner'] == df['']
 
 factor = df['toss_winner'] == df['winner']
 print(factor.groupby(factor).size())
 sns.countplot(factor)
 plt.show()
-
-# df.condition.unique()
-
-# # Reclassify condition column
-# def clean_condition(row):
-    
-#     good = ['good','fair']
-#     excellent = ['excellent','like new']       
-    
-#     if row.condition in good:
-#         return 'good'   
-#     if row.condition in excellent:
-#         return 'excellent'    
-#     return row.condition# Clean dataframe
-# def clean_df(playlist):
-#     df_cleaned = df.copy()
-#     df_cleaned['condition'] = df_cleaned.apply(lambda row: clean_condition(row), axis=1)
-#     return df_cleaned# Get df with reclassfied 'condition' column
-# df_cleaned = clean_df(df)
-# print(df_cleaned.condition.unique())
-
-# df1 = pd.read_csv("deliveries.csv")
-# print(df1.shape)
-# print(df1.head())
-# print(df1.columns)
-# print(df1.nunique(axis=0))
-# print(df1.describe().apply(lambda s: s.apply(lambda x: format(x, 'f'))))
